@@ -65,6 +65,37 @@
 	color: #05faf2;
 	transform: scale(1.1);
 }
+.card li {
+  display: inline-block;
+  position: relative;
+  list-style-type: none;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 80%;
+}
+
+.card li::after {
+  content: '';
+  position: absolute;
+  width: 70%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #05faf2;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.card li:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  color: #05faf2;
+}
+.card li:hover
+{
+	color: #05faf2;
+	transform: scale(1.1);
+}
 .a 
 {
 	height: 630px;
